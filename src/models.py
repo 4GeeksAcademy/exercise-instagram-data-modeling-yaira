@@ -14,7 +14,6 @@ class User(Base):
     LastName = Column(String(50), nullable=False)
     userName = Column(String(50), nullable=False)
     email = Column(String(50), nullable=False)
-    user_to_id = Column(Integer, ForeignKey('Follower.id'))
 
 class Follower(Base):
     __tablename__ = 'Follower'
